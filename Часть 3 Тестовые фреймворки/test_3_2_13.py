@@ -32,10 +32,8 @@ class TestRegistered(unittest.TestCase):
         welcome_text_elt = browser.find_element(By.TAG_NAME, "h1")
         # записываем в переменную welcome_text текст из элемента welcome_text_elt
         welcome_text = welcome_text_elt.text
-
-        self.assertEqual("Congratulations! You have successfully registered!", welcome_text, "КОСЯК")
-
         browser.quit()
+        self.assertEqual("Congratulations! You have successfully registered!", welcome_text, "КОСЯК")
 
     def test_link2(self):
         link2 = "http://suninjuly.github.io/registration2.html"
@@ -61,10 +59,8 @@ class TestRegistered(unittest.TestCase):
         welcome_text_elt = browser.find_element(By.TAG_NAME, "h1")
         # записываем в переменную welcome_text текст из элемента welcome_text_elt
         welcome_text = welcome_text_elt.text
-
-        self.assertEqual("Congratulations! You have successfully registered!", welcome_text, "КОСЯК")
-
         browser.quit()
+        self.assertEqual("Congratulations! You have successfully registered!", welcome_text, "КОСЯК")
 
 
 if __name__ == "__main__":
