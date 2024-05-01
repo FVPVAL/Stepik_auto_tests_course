@@ -16,6 +16,7 @@ from selenium.webdriver.support.ui import WebDriverWait
                                   "https://stepik.org/lesson/236904/step/1",
                                   "https://stepik.org/lesson/236905/step/1"])
 def test_3_6_5(browser, link):
+    browser.implicitly_wait(15)
     browser.get(link)
     browser.find_element(By.CSS_SELECTOR, ".navbar__auth_login").click()
     browser.find_element(By.ID, "id_login_email").send_keys("izol@rambler.ru")
